@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Internal Standards": {
+    "message": "Internal Standards",
+    "description": "The label for category Internal Standards in sidebar tutorialSidebar"
+  }
+}
