@@ -5,7 +5,7 @@
   },
   "link.item.label.Documentation": {
     "message": "Documentation",
-    "description": "The label of footer link with label=Documentation linking to /docs/intern-pattern/pr"
+    "description": "The label of footer link with label=Documentation linking to /docs/development/pr"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",

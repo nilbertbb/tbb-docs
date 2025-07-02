@@ -80,7 +80,7 @@ const config: Config = {
           items: [
             {
               label: "Documentation",
-              to: "/docs/intern-pattern/pr",
+              to: "/docs/development/pr", // ✅ Corrigido aqui
             },
             {
               label: "GitHub",

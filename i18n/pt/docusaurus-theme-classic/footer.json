@@ -36,7 +36,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/tbb/tbb-docs"
   },
   "copyright": {
-    "message": "Copyright © 2025 My Project, Inc. Built with Docusaurus.",
+    "message": "Copyright © 2025 TBB. Built with Docusaurus.",
     "description": "The footer copyright"
   },
   "link.title.Links": {
@@ -45,6 +45,6 @@
   },
   "link.item.label.Documentation": {
     "message": "Documentation",
-    "description": "The label of footer link with label=Documentation linking to /docs/intern-pattern/pr"
+    "description": "The label of footer link with label=Documentation linking to /docs/development/pr"
   }
 }
