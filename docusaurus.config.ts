@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: "https://tbbdocs.example.com",
+  url: "https://tbb-docs.netlify.app/",
   baseUrl: "/",
 
   organizationName: "tbb",
@@ -36,7 +36,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "docs",
-          editUrl: "https://github.com/tbb/tbb-docs/edit/main/",
+          editUrl: "https://github.com/nilbertbb/tbb-docs",
         },
         blog: false,
         theme: {
@@ -66,7 +66,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://github.com/tbb/tbb-docs",
+          href: "https://github.com/nilbertbb/tbb-docs",
           label: "GitHub",
           position: "right",
         },
@@ -80,11 +80,11 @@ const config: Config = {
           items: [
             {
               label: "Documentation",
-              to: "/docs/development/pr", // ✅ Corrigido aqui
+              to: "/docs/development/pr",
             },
             {
               label: "GitHub",
-              href: "https://github.com/tbb/tbb-docs",
+              href: "https://github.com/nilbertbb/tbb-docs",
             },
           ],
         },
