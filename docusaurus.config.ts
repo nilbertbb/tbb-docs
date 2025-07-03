@@ -107,7 +107,7 @@ const config: Config = {
     algolia: {
       appId: 'HPIP208SQH',
       apiKey: '965a43a8337c584fe82fdfd5d9e68556',
-      indexName: 'tbb-docs',
+      indexName: 'TBB Docs',
       contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
