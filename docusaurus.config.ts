@@ -105,7 +105,7 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
     algolia: {
-      appId: 'HPIP208SQH',
+      appId: 'HPIP2O85QH',
       apiKey: '965a43a8337c584fe82fdfd5d9e68556',
       indexName: 'tbb-docs',
       contextualSearch: true,
