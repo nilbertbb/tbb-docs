@@ -48,6 +48,15 @@ const config: Config = {
 
   themeConfig: {
     image: "img/tbb-social-card.jpg",
+    head: [
+      {
+        tagName: 'meta',
+        attributes: {
+          name: 'algolia-site-verification',
+          content: 'EF942356C6364C86',
+        },
+      },
+    ],
     navbar: {
       title: "TBB Docs",
       logo: {
@@ -102,6 +111,8 @@ const config: Config = {
       contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
+
+  
 };
 
 export default config;
