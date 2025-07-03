@@ -95,6 +95,12 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    algolia: {
+      appId: 'HPIP208SQH',
+      apiKey: '965a43a8337c584fe82fdfd5d9e68556',
+      indexName: 'TBB Docs',
+      contextualSearch: true,
+    },
   } satisfies Preset.ThemeConfig,
 };
 
