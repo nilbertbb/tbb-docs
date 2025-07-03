@@ -46,6 +46,17 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        indexDocs: true,
+        docsRouteBasePath: '/docs',
+        language: ['en', 'pt'],
+      },
+    ],
+  ],
+
   themeConfig: {
     image: "img/tbb-social-card.jpg",
     head: [
@@ -103,15 +114,6 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-    },
-    algolia: {
-      appId: 'HPIP2O85QH',
-      apiKey: '965a43a8337c584fe82fdfd5d9e68556',
-      indexName: 'tbb-docs',
-      contextualSearch: true,
-      searchParameters: {
-        facetFilters: [],
-      }
     },
   } satisfies Preset.ThemeConfig,
 
