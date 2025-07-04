@@ -12,7 +12,7 @@ O componente **Barra de Progresso** exibe um indicador visual com base em um val
 
 ## ⚙️ Propriedades
 
-![Barra de Progresso - Propriedades](/img/components/progressbar-properties.png)
+![Barra de Progresso - Propriedades](/img/components/progressbar/progressbar-properties.png)
 
 - **Completion**:  
   Campo numérico que aceita valores de `0` a `100`, representando a porcentagem de progresso.  
@@ -25,7 +25,7 @@ O componente **Barra de Progresso** exibe um indicador visual com base em um val
 
 ## 🎨 Estilos
 
-![Barra de Progresso - Estilos](/img/components/progressbar-styles.png)
+![Barra de Progresso - Estilos](/img/components/progressbar/progressbar-styles.png)
 
 A aba **Styles** permite selecionar classes CSS pré-definidas para aplicar no componente.  
 Essas opções são configuradas por projeto, então os nomes podem variar.  
