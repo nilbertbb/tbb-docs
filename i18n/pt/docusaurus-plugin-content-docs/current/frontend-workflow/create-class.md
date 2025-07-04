@@ -4,87 +4,114 @@ title: Criar Classe no AEM
 sidebar_position: 2
 ---
 
-# 🧩 Criar Classe no AEM
+# 🏷️ Criar Classe no AEM
 
-Este guia explica como adicionar e aplicar uma classe CSS personalizada a um componente AEM por meio da interface de template.
-
----
-
-## ⚙️ Abrindo o Edit Template
-
-A maneira mais rápida de acessar a tela de edição de template é clicando no ícone de engrenagem da página onde você deseja aplicar a classe e, em seguida, clicando em **"Edit Template"**.
-
-> ⚠️ Em alguns casos o botão pode demorar alguns segundos para aparecer após abrir o menu.
-
-![Abrir Edit Template](./img/frontend-workflow/create-class/01-edit-template.png)
+Este guia explica o processo de adição de classes CSS personalizadas a componentes usando Modelos AEM (Modelos Editáveis).
 
 ---
 
-## 🧱 Estrutura do Template
+## 🚪 Acessando o Modelo
 
-Na tela de edição do template, procure o **Layout Container**. Dentro dele, você verá os componentes onde deseja aplicar a classe.
+A maneira mais rápida de acessar o modelo é:
 
-![Layout Container](./img/frontend-workflow/create-class/02-layout-container.png)
+1. Clique no **ícone de engrenagem** na página em que você está trabalhando.
+2. Em seguida, clique em **"Editar Modelo"**.
 
----
+> ⚠️ Se a opção não aparecer imediatamente, passe o mouse sobre o ícone de engrenagem por mais de 5 segundos.
 
-## 🧩 Selecionar o Componente
-
-No Layout Container, clique sobre o nome do componente desejado, por exemplo, **Text**, e selecione o ícone de engrenagem.
-
-![Selecionar o componente](./img/frontend-workflow/create-class/03-text-component.png)
+![Abrir Modelo de Edição](/img/frontend-workflow/create-class/step-01-open-edit-template.png)
 
 ---
 
-## ⚙️ Tela de Configuração do Componente
+## 🧱 Localize o Componente
 
-Você será levado à tela de configuração do componente. Aqui você encontrará a aba **Styles**, onde podemos configurar as classes.
+Na visualização do modelo, você normalmente verá:
 
-![Aba Styles](./img/frontend-workflow/create-class/04-properties-panel.png)
+- Um Fragmento de Experiência (Cabeçalho)
+- Um **Contêiner de Layout**
+- Outro Fragmento de Experiência (Rodapé)
 
----
+Olhe dentro do Contêiner de Layout e encontre o componente (por exemplo, **Texto**) ao qual deseja aplicar uma classe.
 
-## 🎯 Adicionando Classes
+![Layout de Template com Contêiner](/img/frontend-workflow/create-class/step-02-container-list.png)
 
-Dentro da aba **Styles**, vá até **Allowed Styles** e clique em **Add**.
+Clique no pequeno **ícone de engrenagem** no cartão do componente para abrir sua configuração:
 
-Você poderá definir:
-
-- **Group Name**: usado para agrupar estilos. Exemplo: `Global`, `PDP-US` etc.
-- **Styles can be combined**: marca se múltiplas classes do grupo podem ser aplicadas simultaneamente.
-- **Style Name**: nome visível no menu de seleção.
-- **CSS Class**: valor real da classe aplicada no HTML.
-
-![Configuração de estilo preenchida](./img/frontend-workflow/create-class/05-filled-styles.png)
+![Componente de Texto no Template](/img/frontend-workflow/create-class/step-03-component-text.png)
 
 ---
 
-## ✅ Aplicando a Classe no Componente
+## 🧩 Acessando as Configurações de Estilo
 
-Existem duas formas principais:
+Na configuração do componente:
 
-### 1. Pelo menu de pincel (brush icon)
+- Acesse a aba **Estilos**.
+- Você verá uma seção para **Estilos Permitidos**.
 
-![Brush Icon](./img/frontend-workflow/create-class/08-brush-icon.png)
+> As políticas são usadas para agrupar estilos entre os templates. Em breve, disponibilizaremos um link para uma página completa sobre políticas.
 
-### 2. Pela aba de propriedades > Styles
+![Página de Configurações do Componente](/img/frontend-workflow/create-class/step-04-component-settings.png)
 
-![Aba Style via propriedades](./img/frontend-workflow/create-class/09-style-via-properties.png)
-
----
-
-## 👁️ Visualizando no Inspecionar
-
-Após aplicar a classe, você pode visualizar no navegador com o DevTools. A classe será aplicada no nível superior do componente, junto com outras classes internas do AEM.
-
-![Classe aplicada no HTML](./img/frontend-workflow/create-class/10-class-inspect.png)
+![Guia de Estilos na Política](/img/frontend-workflow/create-class/step-05-policy-styles-tab.png)
 
 ---
 
-## 📌 Notas
+## 🎨 Adicionando seu Estilo
 
-- Ao aplicar uma classe, apenas o **wrapper** principal do componente pode ser customizado. Elementos internos têm classes fixas do AEM.
-- Se o botão de adicionar classe não estiver visível, você pode não ter permissão de edição.
-- Os estilos ficam salvos na **Policy** do componente. Uma documentação separada será criada para explicar as Policies mais detalhadamente.
+Clique em **Adicionar** e insira:
 
-> 🔗 *To-do: Linkar aqui com a documentação sobre Policies assim que estiver pronta.*
+- Um **Nome de Grupo** (ex.: `Global`, `pdp US`)
+- Em seguida, defina cada nome de estilo e sua classe CSS correspondente.
+
+> Por padrão, agrupamos por página e usamos um grupo `Global` para estilos reutilizáveis.
+
+![Campos de Estilo Preenchidos](/img/frontend-workflow/create-class/step-06-filled-styles.png)
+
+Clique em **Concluído** após salvar.
+
+---
+
+## 🧪 Aplicando o Estilo
+
+Existem duas maneiras de aplicar estilos a um componente na página:
+
+### 1. Ícone de Pincel
+
+Clique no componente → clique no **ícone de pincel**:
+
+![Opção de Ícone de Pincel](/img/frontend-workflow/create-class/step-08-paint-icon.png)
+
+Selecione o estilo desejado.
+
+### 2. Painel de Propriedades → Estilos
+
+Clique no componente → **ícone de engrenagem** → **guia Estilos**:
+
+![Guia Estilos para Seleção](/img/frontend-workflow/create-class/step-09-style-tab.png)
+
+---
+
+## 🔍 Sobre Estilos com Escopo
+
+No AEM, ao aplicar uma classe a um componente:
+
+- Você só pode direcionar para o elemento **raiz** desse componente.
+
+- Elementos aninhados seguem a estrutura interna do AEM e **não podem ser classificados diretamente**.
+
+> Exemplo: ao estilizar um contêiner, apenas o wrapper pode ser personalizado com uma classe.
+
+![Componente estilizado no DOM](/img/frontend-workflow/create-class/step-10-inspector-view.png)
+
+---
+
+## ✅ Resumo
+
+- Use **Editar Modelo** para configurar políticas e estilos permitidos.
+- As classes podem ser agrupadas e alternadas por componente.
+- Aplique estilos por meio do ícone do pincel ou da aba de estilos.
+- Somente o wrapper externo pode ser estilizado — os elementos internos são bloqueados.
+
+---
+
+📌 *Este processo requer permissões para editar modelos e políticas. Se as opções estiverem ausentes, sua conta poderá não ter acesso.*
