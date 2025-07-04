@@ -1,20 +1,39 @@
 ---
+id: progressbar
 title: Progress Bar
 sidebar_position: 15
 ---
 
-# Progress Bar
+# 📊 Progress Bar
 
-_TODO: Add description, usage instructions, and best practices for the **Progress Bar** component._
+The **Progress Bar** component displays a visual indicator of completion based on a percentage value.
 
-## 🧩 Usage
+---
 
-_TODO: Explain how to configure and where to use the progress bar component in AEM._
+## ⚙️ Properties
 
-## 💡 Best Practices
+![Progress Bar - Properties](/img/components/progressbar/progressbar-properties.png)
 
-_TODO: Include recommendations and do's/don'ts for consistency._
+- **Completion**:  
+  Numeric input between `0` and `100` representing the progress percentage.  
+  Example: `56` will render the bar as 56% filled.
 
-## 🛠️ Technical Notes
+- **ID**:  
+  Optional identifier used for internal linking or styling purposes.
 
-_TODO: Add implementation notes, markup structure, class names, or scripts as needed._
+---
+
+## 🎨 Styles
+
+![Progress Bar - Styles](/img/components/progressbar/progressbar-styles.png)
+
+The **Styles** tab allows selection of predefined CSS classes to apply to the component.  
+These options are configured per project, so available classes may vary.  
+Example: `progress-bar-showcase`
+
+---
+
+## ℹ️ Notes
+
+- The component renders dynamically based on the `Completion` value.
+- You may customize its appearance further via the style system or external CSS.
